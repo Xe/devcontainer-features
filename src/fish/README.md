@@ -15,7 +15,7 @@ Fish with Xe's prompt and settings
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| fisher | Install Fisher plugin manager | boolean | true |
+| fisher | Install Fisher plugin manager | boolean | false |
 
 
 
