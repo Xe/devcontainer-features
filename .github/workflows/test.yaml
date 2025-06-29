@@ -16,6 +16,7 @@ jobs:
           - deno
           - fish
           - ko
+          - yoke
         baseImage:
           - mcr.microsoft.com/devcontainers/base:bookworm
     steps:
@@ -36,6 +37,7 @@ jobs:
           - deno
           - fish
           - ko
+          - yoke
     steps:
       - uses: actions/checkout@v4
 
