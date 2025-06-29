@@ -17,7 +17,7 @@ jobs:
           - fish
           - ko
         baseImage:
-          - ghcr.io/xe/devcontainer-base/pre/base
+          - mcr.microsoft.com/devcontainers/base:bookworm
     steps:
       - uses: actions/checkout@v4
 
