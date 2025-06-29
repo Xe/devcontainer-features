@@ -34,8 +34,8 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - deno
+          - fish
     steps:
       - uses: actions/checkout@v4
 
