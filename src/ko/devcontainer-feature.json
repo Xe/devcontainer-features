@@ -1,0 +1,20 @@
+{
+  "id": "ko",
+  "version": "1.0.0",
+  "name": "ko",
+  "documentationURL": "http://github.com/Xe/devcontainer-features/tree/main/src/ko",
+  "description": "ko is a simple, fast container image builder for Go applications.",
+  "options": {
+    "version": {
+      "default": "0.18.0",
+      "description": "Select the version to install.",
+      "proposals": [
+        "0.18.0"
+      ],
+      "type": "string"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}
