@@ -1,5 +1,5 @@
 {
-    "color_and_hello": {
+    "everything": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "deno": {
@@ -7,7 +7,8 @@
             },
             "fish": {
                 "fisher": false
-            }
+            },
+            "ko": {}
         }
     }
 }
