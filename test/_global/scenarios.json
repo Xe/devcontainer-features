@@ -2,11 +2,11 @@
     "color_and_hello": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "color": {
-                "favorite": "purple"
+            "deno": {
+                "version": "latest"
             },
-            "hello": {
-                "greeting": "Greetings"
+            "fish": {
+                "fisher": false
             }
         }
     }

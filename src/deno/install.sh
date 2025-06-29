@@ -2,18 +2,37 @@
 set -e
 
 apt_get_update() {
-    if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+  case "${ID}" in
+    debian|ubuntu)
+      if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
         echo "Running apt-get update..."
         apt-get update -y
-    fi
+      fi
+    ;;
+    fedora|rhel)
+      dnf update -y
+    ;;
+  esac
 }
 
 # Checks if packages are installed and installs them if not
 check_packages() {
-    if ! dpkg -s "$@" > /dev/null 2>&1; then
+  case "${ID}" in
+    debian|ubuntu)
+      if ! dpkg -s "$@" >/dev/null 2>&1; then
         apt_get_update
         apt-get -y install --no-install-recommends "$@"
-    fi
+      fi
+    ;;
+    alpine)
+      if ! apk -e info "$@" >/dev/null 2>&1; then
+        apk add --no-cache "$@"
+      fi
+    ;;
+    fedora|rhel)
+      dnf install -y --setopt=install_weak_deps=False "$@"
+    ;;
+  esac
 }
 
 check_packages curl unzip ca-certificates
