@@ -2,8 +2,8 @@
     "hello": {
         "image": "mcr.microsoft.com/devcontainers/base:bookworm",
         "features": {
-            "hello": {
-                "greeting": "hello"
+            "fish": {
+                "fisher": false
             }
         }
     }
