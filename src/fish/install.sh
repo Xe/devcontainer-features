@@ -102,7 +102,7 @@ case "${ID}" in
     fi
     curl -o xe-fish-prompt.deb https://files.xeiaso.net/dl/xe-fish-prompt_1.23.0~2-g063d5c0-dev_all.deb
     apt-get update -y
-    apt-get -y install --no-install-recommends fish
+    apt-get -y install --no-install-recommends fish ./xe-fish-prompt.deb
 
   ;;
   alpine)

@@ -1,7 +1,7 @@
 {
   "name": "Fish configuration",
   "id": "fish",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fish with Xe's prompt and settings",
   "options": {
     "fisher": {
