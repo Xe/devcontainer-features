@@ -1,0 +1,21 @@
+{
+  "id": "yoke",
+  "version": "1.0.0",
+  "name": "yoke",
+  "documentationURL": "http://github.com/Xe/devcontainer-features/tree/main/src/yoke",
+  "description": "Infrastructure as code, but actually",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": [
+        "latest",
+        "v0.14.1"
+      ],
+      "type": "string"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
+}

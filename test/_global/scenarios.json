@@ -1,6 +1,6 @@
 {
     "everything": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
         "features": {
             "deno": {
                 "version": "latest"
@@ -8,7 +8,8 @@
             "fish": {
                 "fisher": false
             },
-            "ko": {}
+            "ko": {},
+            "yoke": {}
         }
     }
 }
