@@ -1,15 +1,13 @@
 
-# Hello, World! (hello)
+# Fish configuration (fish)
 
-A hello world feature
+Fish with Xe's prompt and settings
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/hello:1": {
-        "version": "latest"
-    }
+    "ghcr.io/Xe/devcontainer-features/fish:0": {}
 }
 ```
 
@@ -17,10 +15,10 @@ A hello world feature
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
+| fisher | Install Fisher plugin manager | boolean | true |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/hello/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/Xe/devcontainer-features/blob/main/src/fish/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
