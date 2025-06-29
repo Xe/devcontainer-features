@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "deno version" deno --version
+check "ko version" ko version
 
 reportResults

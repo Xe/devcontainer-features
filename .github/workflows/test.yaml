@@ -15,10 +15,9 @@ jobs:
         features:
           - deno
           - fish
+          - ko
         baseImage:
-          - debian:latest
-          - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - ghcr.io/xe/devcontainer-base/pre/base
     steps:
       - uses: actions/checkout@v4
 
@@ -36,6 +35,7 @@ jobs:
         features:
           - deno
           - fish
+          - ko
     steps:
       - uses: actions/checkout@v4
 
