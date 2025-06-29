@@ -1,0 +1,21 @@
+{
+  "name": "Fish configuration",
+  "id": "fish",
+  "version": "0.1.0",
+  "description": "Fish with Xe's prompt and settings",
+  "options": {
+    "fisher": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install Fisher plugin manager"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "fish"
+      }
+    }
+  },
+  "installsAfter": ["ghcr.io/devcontainers/features/common-utils"]
+}

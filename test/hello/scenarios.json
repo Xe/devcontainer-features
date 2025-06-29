@@ -2,8 +2,8 @@
     "hello": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "hello": {
-                "greeting": "hello"
+            "fish": {
+                "fisher": true
             }
         }
     }
