@@ -6,6 +6,12 @@ TARGET_KO_VERSION="${VERSION:-"0.18.0"}"
 OS="Linux"     # or Darwin
 ARCH="$(uname -m)"  # or arm64, i386, s390x
 
+case "${ARCH}" in
+    aarch64)
+        ARCH="arm64"
+        ;;
+esac
+
 # Clean up
 rm -rf /var/lib/apt/lists/*
 
